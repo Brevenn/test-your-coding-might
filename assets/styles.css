@@ -1,0 +1,23 @@
+.timer {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.start-btn {
+    text-align: center;
+}
+
+.intro-text {
+    text-align: center;
+}
+
+.intro-container {
+    display: flex;
+    flex-direction: column;
+    color: navy;
+}
