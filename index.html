@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="scripter"    href="./assets/js/script.js">
     <title>Test Your Coding Might</title>
 </head>
 <body>
@@ -12,8 +13,22 @@
     <div class="highscore">View Highscores</div>
     <div class="intro-container">
         <h1>Test Your Coding Might</h1>
-        <div class="intro-text">Click the button below to test your knowledge with a quiz on the languages of code!</div>
-        <button class="start-btn">Start Quiz</button>g
+        <div class="intro-text">Click the button below to test your knowledge with a quiz on the languages of code. 
+            Please be mindful as every question you answer incorrectly will subtract time by 10 seconds from the the 
+            time allowed!</div>
+        <button class="start-btn">Start Quiz</button>
+    </div>
+
+    <div class="q-container-1">
+        <div id="question-container" class="hide">
+            <div id="question"></div>
+            <div id="answer-options" class="btn-column">
+                <button class="btn">Answer 1</button>
+                <button class="btn">Answer 2</button>
+                <button class="btn">Answer 3</button>
+                <button class="btn">Answer 4</button>
+            </div>
+        </div>
     </div>
 </body>
 </html>
