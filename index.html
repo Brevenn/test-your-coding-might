@@ -7,24 +7,10 @@
 
     <!-- Reference to CSS stylesheet -->
     <link rel="stylesheet" href="./assets/css/styles.css">
-
-    <!-- Link to javascript files, defers to the bottom of the page -->
-    <script defer src="./assets/js/script.js"></script>
-
     <title>Test Your Coding Might: Quiz</title>
 </head>
 <body>
     <div class="container">
-        <header class="row">
-            <div class="highscores" id="highscores">
-                <a>View Highscores</a>
-            </div>
-            <div class="time" id="time">
-                Timer: <span id="timer"></span>
-            </div>
-
-        </header>
-
         <!-- Button to start the Quiz application -->
         <div class="start_btn"><button>Start Quiz</button></div>
 
@@ -48,5 +34,60 @@
                 <button class="restart">Continue</button>
             </div>
         </section>
+
+        <!-- Quiz Container Section -->
+        <div class="quiz_box">
+            <!-- Quiz Title Container -->
+            <header>
+                <div class="title">Test Your Coding Might!</div>
+                <div class="timer">
+                    <div class="time_info">Timer:</div>
+                    <div class="timer_seconds">60</div>
+                </div>
+            </header>
+            <!-- Quiz Questions Container -->
+            <section>
+                <div class="question_text">
+                    <span>Which built-in method returns the character at the specified index?</span>
+                </div>
+                <div class="option_list">
+                    <div class="option">
+                        <span>characterAt()</span>
+                    </div>
+                    <div class="option">
+                        <span>getCharAt()</span>
+                    </div>
+                    <div class="option">
+                        <span>charAT()</span>
+                    </div>
+                    <div class="option">
+                        <span>None of the Above</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Quiz Footer Container -->
+            <footer>
+                <div class="total_questions">
+                    <span><p>1</p>of<p>5</p>Questions</span>
+                </div>
+                <button class="next_btn">Next Question</button>
+            </footer>
+        </div>
+
+        <!-- Quiz Score Results Container-->
+        <div class="result_container">
+            <div class="complete_text">You have tested your Might!</div>
+            <div class="score_text">
+                <span>You got <p>1</p> out of <p>5</p></span>
+            </div>
+            <div class="buttons">
+                <button class="restart">Test Your Might Again? Maybe you've learned something...</button>
+                <button class="quit">Exit the Quiz</button>
+            </div>
+        </div>
+        <!-- Link to javascript files, defers to the bottom of the page -->
+        <script src="./assets/js/script.js"></script>
+        <script src="./assets/js/questions.js"></script>
 </body>
 </html>
