@@ -1,45 +1,129 @@
-.timer {
+/* Main Styling */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+.container {
+    text-align: left;
+}
+
+.time {
     position: absolute;
-    top: 10px;
-    right: 30px;
+    top: 2px;
+    right: 5px;
 }
 
-h1 {
-    text-align: center;
-}
-
-.start-btn {
-    text-align: center;
-    width: 100px;
-    justify-content: center;
-}
-
-.intro-text {
-    margin: 10px;
-    padding: 10px;
-    text-align: center;
-    border: .1rem solid black;
-    border-radius: 5px;
-}
-
-.intro-container {
+.row {
     display: flex;
     flex-direction: column;
-    color: navy;
+    color: blueviolet;
 }
 
-.timer {
+.highscores {
     margin: 5px;
     padding: 10px;
-    color: navy;
+    width: 135px;
+    background-color: black;
     border: .1rem solid black;
     border-radius: 5px;
 }
-.highscore {
+
+.time {
     margin: 5px;
     padding: 10px;
-    width: 125px;
-    color: navy;
+    background-color: black;
     border: .1rem solid black;
     border-radius: 5px;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+.start_btn, 
+.info_container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Start Button Styling */
+
+.start_btn button {
+    font-size: 25px;
+    font-weight: 500;
+    color: blueviolet;
+    padding: 15px 20px;
+    outline: none;
+    border: none;
+    background: gray;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.info_container{
+    width: 540px;
+    background: grey;
+    border-radius: 5px;
+}
+
+.info_container .info_title {
+    height: 60px;
+    width: 100%;
+    border-bottom: 1px solid black;
+    display: flex;
+    align-items: center;
+    padding: 0 35px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.info_container .info_list {
+    padding: 15px 35px;
+}
+
+.info_container .info_list .info {
+    margin: 5px 0;
+    font-size: 17px;
+}
+
+.info_container .info_list .info span{
+    font-weight: 600;
+    color: blueviolet;
+}
+
+.info_container .buttons {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 35px;
+    border-top: 1px solid black;
+}
+
+.info_container .buttons button {
+    margin: 0 10px;
+    height: 40px;
+    width: 220px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    color: rgb(48, 46, 46);
+    font-size: 20px;
+    font-weight: 500px;
+    font-style: bold;
+    cursor: pointer;
+}
+
+.buttons button.restart {
+    color: blueviolet;
+    border-color: blueviolet;
+}
+
+.buttons button.quit {
+    color: blueviolet;
+    border-color: blueviolet;
 }
