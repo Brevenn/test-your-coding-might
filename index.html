@@ -10,18 +10,18 @@
     <title>Test Your Coding Might: Quiz</title>
 </head>
 <body>
-    <div class="container">
+    <div class= "container">
         <!-- Button to start the Quiz application -->
-        <div class="start_btn"><button>Start Quiz</button></div>
+        <div id= "start-btn" class="start_btn"><button>Start Quiz</button></div>
 
         <!-- Information Container -->
-        <section class="info_container">
+        <section id= "info-container" class="info_container">
 
-            <section class="info_title">
+            <section id= "info-title" class="info_title">
                 <span>Rules of the Coding Might Quiz</span>
             </section>
 
-            <section class="info_list">
+            <section id= "info-list" class="info_list">
                 <div class="info">1. You will only have <span>60 Seconds</span> to complete the quiz.</div>
                 <div class="info">2. For every question you answer wrong your timer will be penalized.</div>
                 <div class="info">3. Once you select an answer, you may not reselect a different one.</div>
@@ -29,9 +29,9 @@
                 <div class="info">5. You will get points based on your correct answers.</div>
             </section>
 
-            <div class="buttons">
-                <button class="quit">Chicken Out?</button>
-                <button class="restart">Continue</button>
+            <div id="begin-quiz-btns" class="buttons">
+                <button id= "quit" class="quit">Chicken Out?</button>
+                <button id= "continue" class="restart">Continue</button>
             </div>
         </section>
 
@@ -39,18 +39,18 @@
         <div class="quiz_box">
             <!-- Quiz Title Container -->
             <header>
-                <div class="title">Test Your Coding Might!</div>
-                <div class="timer">
-                    <div class="time_info">Timer:</div>
-                    <div class="timer_seconds">60</div>
+                <div id="title" class="title">Test Your Coding Might!</div>
+                <div id="timer" class="timer">
+                    <div id="timer-info" class="time_info">Timer:</div>
+                    <div id="timer-seconds" class="timer_seconds">60</div>
                 </div>
             </header>
             <!-- Quiz Questions Container -->
             <section>
-                <div class="question_text">
+                <div id="question-text" class="question_text">
                     <span>Which built-in method returns the character at the specified index?</span>
                 </div>
-                <div class="option_list">
+                <div id="option-list" class="option_list">
                     <div class="option">
                         <span>characterAt()</span>
                     </div>
@@ -76,14 +76,14 @@
         </div>
 
         <!-- Quiz Score Results Container-->
-        <div class="result_container">
+        <div id="result-container" class="result_container">
             <div class="complete_text">You have tested your Might!</div>
-            <div class="score_text">
-                <span>You got <p>1</p> out of <p>5</p></span>
+            <div id="score-text" class="score_text">
+                <span id="score-amount">You got <p>1</p> out of <p>5</p></span>
             </div>
-            <div class="buttons">
-                <button class="restart">Test Your Might Again? Maybe you've learned something...</button>
-                <button class="quit">Exit the Quiz</button>
+            <div id="end-btns" class="buttons">
+                <button id= "rstrt-btn" class="restart">Test Your Might Again? Maybe you've learned something...</button>
+                <button id= "exit-btn" class="quit">Exit the Quiz</button>
             </div>
         </div>
         <!-- Link to javascript files, defers to the bottom of the page -->

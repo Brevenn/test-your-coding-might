@@ -1,15 +1,18 @@
-// calling the elements of the html page
-const start_btn = document.querySelector("start_btn button");
-const info_box = document.querySelector(".info_box");
-const exit_btn = info_box.querySelector(".buttons .quit");
-const continue_btn = info_box.querySelector(".buttons .restart");
+const startButton = document.getElementsById('start-btn')
+const questionContainer = document.getElementsById('quiz_box')
+startButton.addEventListener('click', startGame)
 
-// if Start Quiz Button gets clicked, show the information box
-start_btn.onclick = ()=> {
-    info_box.classList.add("activeInfo");
+function startGame() {
+    console.log('Started')
+    startButton.classList.add('hide')
+    questionContainer.classList.remove('hide')
 }
 
-// if the Exit the Quiz Button gets clicked, hide the information box
-exit_btn.onclick = ()=> {
-    info_box.classList.remove("activeInfo");
+function setNextQuestion() {
+
+
+}
+
+function selectAnswer() {
+
 }
