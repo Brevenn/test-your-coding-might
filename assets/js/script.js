@@ -1,3 +1,4 @@
+// create question array
 const questions = [
   {
     question:"String values must be enclosed within _____ when being assigned to variables.",
@@ -30,23 +31,27 @@ const questions = [
     answer: "c. myFunction()"
   },
   {
-    question:
-    choices:["a. ", "b. ", "c. ", "d. "],
-    answer:
+    question: "The first index of an array is _____.",
+    choices:["a. 0", "b. 1", "c. 7", "d. any"],
+    answer: "a. 0"
   },
   {
-    question:
-    choices:["a. ", "b. ", "c. ", "d. "],
-    answer:
+    question: "How do you add a comment in a JavaScript?",
+    choices:["a. //This is a comment", "b. <!--This is a comment-->", "c. 'This is a comment", "d. * This is a comment *"],
+    answer: "a. //This is a comment"
   },
   {
-    question:
-    choices:["a. ", "b. ", "c. ", "d. "],
-    answer:
+    question: "How to write an IF statement in JavaScript?",
+    choices:["a. if i == 5 then", "b. if i = 5 then", "c. if(i == 5)", "d. if i = 5"],
+    answer:"c. if(i == 5)"
   },
   {
-    question:
-    choices:["a. ", "b. ", "c. ", "d. "],
-    answer:
+    question: "Which event occurs when the user clicks on an HTML element?",
+    choices:["a. onclick", "b. onchange", "c. onmouseover", "d. onmouseclick"],
+    answer:"a. onclick"
   }
 ];
+
+// reference the HTML elements
+var timer = document.getElementById("timer");
+var timeLeft = document.getElementById("timeLeft");
