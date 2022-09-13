@@ -10,13 +10,14 @@
     <link rel="stylesheet" href="./assets/css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Archivo&family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
     <title>Test Your Coding Might: Quiz</title>
+
 </head>
-<body>
-    <div class="container-fluid">
-        <!-- Header with highscores and timer -->
-        <div class="row">
-            <div class="col text-left">
-                <a href="#" id="viewHighScore">View Highscores</a>
+    <body>
+        <div class="container-fluid">
+            <!-- Header with highscores and timer -->
+            <div class="row">
+                <div class="col text-left">
+                    <a href="#" id="viewHighScore">View Highscores</a>
             </div>
             <div id="timer" class="col text-right">
                 <i class="far fa-clock"></i> Time: <span id="timeLeft"></span>
@@ -47,8 +48,35 @@
                     </div>
                 </div>
 
-                
+                <!-- User Info Container -->
+                <div class="pl-5 ml-2 pt-5 justify-content-center font-weight-bold" id="summary" style="display: none;">
+                    <div class="col-2"></div>
+                    <div class="col-8 text-left">
+                        <h2 class="font-weight-bold pt-2 pb-3 m-2">Your Final Score is <span id="finalScore"></span> !</h2>
+                        <form>
+                            <p class="pt-2 pb-3 m-2">Enter Your Initials: <input id="initialInput" class="form-control pt-2 pb-3 mt-2" type="text">
+                            <button type="submit" id="submitInitialBtn" class="btn btn-info mt-3">Submit</button>
+                            </p>
+                        </form>
+                    </div>
+                        <div class="col-2"></div>
+                </div>
+
+                <!-- Highscore Container -->
+                <div class="pl-5 ml-4 pt-5 justify-content-center font-weight-bold" style="display: none;">
+                    <h2 class="font-weight-bold pt-2 pb-3 mb-2">High Scroes</h2>
+
+                    <div id="listOfHighscore" class="list-group list-group-flush pt-2 pb-3 mb-2"></div>
+
+
+                    <p>
+                        <button type="submit" class="btn btn-info mt-3 mr-3" id="goBackBtn">Go Back</button>
+                        <button type="submit" class="btn btn-info mt-3" id="clearHighScoreBtn">Clear High Scores</button>
+                    </p>
+
+                </div>
             </main>
+            <div class="col-md-2"></div>
         </div>
     </div>
         <!-- Link to javascript files, defers to the bottom of the page -->
