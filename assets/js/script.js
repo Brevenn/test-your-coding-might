@@ -130,7 +130,7 @@ function nextQuestion() {
   choiceD.textContent = questions[questionIndex].choices[3];
 }
 
-// create a function to check the answer
+// create a function to check the answer to see if it is correct or wrong
 function checkAnswer(answer) {
 
   var lineBreak = document.getElementById("lineBreak");
@@ -156,3 +156,18 @@ function checkAnswer(answer) {
   } 
 }
 
+// create functions for user answers
+function chooseA() { checkAnswer(0); }
+function chooseB() { checkAnswer(1); }
+function chooseC() { checkAnswer(2); }
+function chooseD() { checkAnswer(3); }
+function gameOver() {
+  summary.style.display = "block";
+  questionDiv.style.display = "none";
+  startDiv.style.display = "none";
+  timer.style.display = "none";
+  timesUp.style.display = "block";
+  finalScore.textContent = correctAns;
+}
+
+// store the highscores in local storage and allow the user to type initials for highscores
