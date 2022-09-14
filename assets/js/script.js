@@ -53,5 +53,65 @@ const questions = [
 ];
 
 // reference the HTML elements
+
+// timer elements
 var timer = document.getElementById("timer");
 var timeLeft = document.getElementById("timeLeft");
+var timesUp = document.getElementById("timesUp");
+
+// start elements
+var startDiv = document.getElementById("start");
+var startQuizBtn = document.getElementById("start-quiz-button");
+
+// question and answer elements
+var questionDiv = document.getElementById("questionDiv");
+var questionTitle = document.getElementById("questionTitle");
+var choiceA = document.getElementById("btn0");
+var choiceB = document.getElementById("btn1");
+var choiceC = document.getElementById("btn2");
+var choiceD = document.getElementById("btn3");
+var answerCheck = document.getElementById("answerCheck");
+
+// extra elements
+var summary = document.getElementById("summary");
+var submitInitialBtn = document.getElementById("submitInitialBtn");
+var initialInput = document.getElementById("initialInput");
+var everything = document.getElementById("everything");
+var correctAns = 0;
+var questionNum = 0;
+var scoreResult;
+var questionIndex = 0;
+
+// score section elements
+var highScoreSection = document.getElementById("highScoreSection");
+var finalScore = document.getElementById("finalScore");
+var goBackBtn = document.getElementById("goBackBtn");
+var clearHighScoreBtn = document.getElementById("clearHighScoreBtn");
+var viewHighScore = document.getElementById("viewHighScore");
+var listOfHighScores = document.getElementById("listOfHighScores");
+
+// timer function
+var totalTime = 91;
+function newQuiz() {
+  questionIndex = 0;
+  totalTime = 90;
+  timeLeft.textContent = totalTime;
+  initialInput.textContent = "";
+  startDiv.style.display = "none";
+  questionDiv.style.display = "block";
+  timer.style.display = "block"
+  timesUp.style.display = "none";
+  // create the timer
+  var startTimer = setInterval(function(){
+    totalTime--;
+    timeLeft.textContent = totalTime;
+    if(totalTime <= 0) {
+      clearInterval(startTimer);
+      if(questionIndex < questions.length - 1) {
+        gameOver();
+      }
+    }
+  },1000);
+
+  showQuiz();
+};
