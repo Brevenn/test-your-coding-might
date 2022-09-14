@@ -129,3 +129,30 @@ function nextQuestion() {
   choiceC.textContent = questions[questionIndex].choices[2];
   choiceD.textContent = questions[questionIndex].choices[3];
 }
+
+// create a function to check the answer
+function checkAnswer(answer) {
+
+  var lineBreak = document.getElementById("lineBreak");
+  lineBreak.style.display = "block";
+  answerCheck.style.display = "block";
+
+    if (questions[questionIndex].answer == questions[questionIndex].choices[answer]) {
+    correctAns++;
+    answerCheck.textContent = "Correct!";
+  } else {
+  totalTime -= 10;
+  timeLeft.textContent = totalTime;
+  answerCheck.textContent = "Wrong! The correct answer is: " + questions[questionIndex].answer;
+  }
+
+  questionIndex++;
+
+  if (questionIndex < questions.length) {
+    nextQuestion();
+  }else {
+    gameOver();
+
+  } 
+}
+
