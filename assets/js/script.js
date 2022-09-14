@@ -209,3 +209,62 @@ function storeHighScores(event) {
 
   showHighScores();
 }
+
+// function to display highscores
+var i = 0;
+function showHighScores() {
+
+  startDiv.style.display = "none";
+  timer.style.display = "none";
+  questionDiv.style.display = "none";
+  timesUp.style.display = "none";
+  summary.style.display = "none";
+  highScoreSection.style.display = "block";
+
+  var savedHighScores = localStorage.getItem("high scores");
+
+  if (savedHighScores === null){
+    return;
+  }
+  console.log(savedHighScores);
+
+  var storedHighScores = JSON.parse(savedHighScores);
+
+  for(;i < storedHighScores.length; i++) {
+    var eachNewHighScore = document.getElementById("p");
+    eachNewHighScore.innerHTML = storedHighScores[i].initials + ":" + storedHighScores[i].score;
+    listOfHighScores.appendChild(eachNewHighScore);
+  }
+}
+
+// create event listeners for main functions and buttons
+
+// start quiz and choices event listeners
+startQuizBtn.addEventListener("click", newQuiz);
+choiceA.addEventListener("click", chooseA);
+choiceB.addEventListener("click", chooseB);
+choiceC.addEventListener("click", chooseC);
+choiceD.addEventListener("click", chooseD);
+
+// submit button event listener
+submitInitialBtn.addEventListener("click", function(event){
+  storeHighScores(event);
+});
+
+// view high score event listener
+viewHighScore.addEventListener("click", function(event){
+  storeHighScores(event);
+});
+
+// go back event listener
+goBackBtn.addEventListener("click", function(event){
+  startDiv.style.display = "block";
+  highScoreSection.style.display = "none";
+});
+
+// clear high scores event listener
+clearHighScoreBtn.addEventListener("click", function(event){
+  window.localStorage.removeItem("high scores");
+  listOfHighScores.innerHTML = "High Scores Cleared!";
+  listOfHighScores.setAttribute("style", "font-family: 'Archivo', sans-serif; font-style: italic;")
+});
