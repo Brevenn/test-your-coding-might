@@ -91,10 +91,10 @@ var viewHighScore = document.getElementById("viewHighScore");
 var listOfHighScores = document.getElementById("listOfHighScores");
 
 // timer function
-var totalTime = 91;
+var totalTime = 121;
 function newQuiz() {
   questionIndex = 0;
-  totalTime = 90;
+  totalTime = 120;
   timeLeft.textContent = totalTime;
   initialInput.textContent = "";
   startDiv.style.display = "none";
@@ -123,6 +123,7 @@ function showQuiz() {
 
 // progress the question
 function nextQuestion() {
+  console.log("questions", questions)
   questionTitle.textContent = questions[questionIndex].question;
   choiceA.textContent = questions[questionIndex].choices[0];
   choiceB.textContent = questions[questionIndex].choices[1];
@@ -158,9 +159,13 @@ function checkAnswer(answer) {
 
 // create functions for user answers
 function chooseA() { checkAnswer(0); }
+
 function chooseB() { checkAnswer(1); }
+
 function chooseC() { checkAnswer(2); }
+
 function chooseD() { checkAnswer(3); }
+
 function gameOver() {
   summary.style.display = "block";
   questionDiv.style.display = "none";
