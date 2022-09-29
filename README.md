@@ -40,7 +40,7 @@
 
 **Technical Acceptance Criteria: 40%**
 
-- Satisfies all of the above acceptance criteria.
+- Satisfies all of the below acceptance criteria.
 
 **Deployment: 32%**
 
@@ -74,15 +74,16 @@
 
 #### Link: 
 
+[Test Your Coding Might](https://Brevenn.github.io/module.4.test-your-coding-might)
 
 ### References:
 
-###### **Author:**
+###### **Author**
 - [Charles Breven Glasgow](https://github.com/Brevenn)
 
 - [UT Coding Boot Camp of Austin](https://techbootcamps.utexas.edu/coding/)
 
-###### **Languages:**
+###### **Languages**
 - [HTML](https://www.w3schools.com/html/)
 
 - [CSS](https://www.w3schools.com/css/default.asp)
