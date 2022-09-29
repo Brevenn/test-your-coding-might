@@ -1,52 +1,56 @@
 body {
-    background-color: #f2f2f2;
+  background-color: #f2f2f2;
 }
 
 p {
-    color: #101214;
+  color: #101214;
 }
 
-h1, h2 {
-    color: #101214;
+h1,
+h2 {
+  color: #101214;
 }
 
 a {
-    color: #3290a6;
-    font-family: 'Archivo', sans-serif;
+  color: #3290a6;
+  font-family: "Archivo", sans-serif;
 }
 
 a:hover {
-    color: #99B8BF;
-    font-family: 'Archivo', sans-serif;
+  color: #99b8bf;
+  font-family: "Archivo", sans-serif;
 }
 
-.btn:focus, .tbn:active, .btn:visited {
-    outline: none !important;
-    box-shadow: none !important;
-    background-color: #343a40;
+.btn:focus,
+.tbn:active,
+.btn:visited {
+  outline: none !important;
+  box-shadow: none !important;
+  background-color: #343a40;
 }
 
 #finalScore {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
 }
 
-span, p {
-    font-family: 'Archivo', sans-serif;
+span,
+p {
+  font-family: "Archivo", sans-serif;
 }
 
 #questionTitle {
-    font-size: 20px;
-    font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
 }
 
-#questionDiv{
-    min-width: 800px;
-    max-width: 800px;
-    margin-right: 100px;
+#questionDiv {
+  min-width: 800px;
+  max-width: 800px;
+  margin-right: 100px;
 }
 
 #answerCheck {
-    font-style: italic;
-    color: #4d5159;
+  font-style: italic;
+  color: #4d5159;
 }
